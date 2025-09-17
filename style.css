@@ -1,0 +1,91 @@
+ body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* 1. Element Selector (මූලද්‍රව්‍ය තෝරන) */
+h1, h2, h3 {
+    color: #34495e;
+}
+
+/* 2. ID Selector (හැඳුනුම්පත තෝරන) */
+#main-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 3. Class Selector (පන්ති තෝරන) */
+.content {
+    background-color: #ecf0f1;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.special-text {
+    font-style: italic;
+    font-weight: bold;
+    color: #c0392b;
+}
+
+/* 4. Descendant Selector (පරම්පරා තෝරන) */
+article p {
+    margin-bottom: 1em;
+    border-top: 10px solid rgb(163, 8, 201);
+}
+
+/* 5. Child Selector (දරුවා තෝරන) */
+ul > li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+/* 6. Adjacent Sibling Selector (පැති සහෝදර තෝරන) */
+section ~ p {
+    color: #2980b9;
+    background-color:  rgb(3, 185, 27)!important;
+
+}
+
+/* 7. General Sibling Selector (සාමාන්‍ය සහෝදර තෝරන) */
+h2 ~ p {
+    font-size: 0.9em;
+    
+}
+
+/* 8. Attribute Selector (ගුණාංග තෝරන) */
+a[href] {
+    text-decoration: none;
+    color: #3498db;
+    text-shadow: palegreen;
+    
+}
+
+/* 9. Pseudo-class Selector (ව්‍යාජ-පන්ති තෝරන) */
+a:hover {
+    text-decoration: underline;
+    color: #2980b9;
+}
+
+li:first-child {
+    font-weight: bold;
+}
+
+/* 10. Pseudo-element Selector (ව්‍යාජ-මූලද්‍රව්‍ය තෝරන) */
+p::first-letter {
+    font-size: 2em;
+    color: #e74c3c;
+}
+
+p::after {
+    content: " (End of paragraph) ";
+    color: #95a5a6;
+    font-style: italic;
+    font-size: 0.8em;
+    transition-duration: 1s;
+    transition: ease-in;
+}
